@@ -1,10 +1,11 @@
-package lib.rescuecore2.dcop.communication;
+package rescuedcop.rescuecore2.communication;
 
-import rescuecore2.worldmodel.*;
 import rescuecore2.standard.entities.StandardWorldModel;
 import rescuecore2.standard.kernel.comms.ChannelCommunicationModel;
-import rescuecore2.config.Config;
+import rescuecore2.worldmodel.WorldModel;
+import rescuecore2.worldmodel.Entity;
 import rescuecore2.messages.Command;
+import rescuecore2.config.Config;
 import java.util.*;
 
 public class DCOPChannelCommunicationModel extends ChannelCommunicationModel
@@ -28,7 +29,7 @@ public class DCOPChannelCommunicationModel extends ChannelCommunicationModel
     {
         super.initialise(config, model);
         this.model = StandardWorldModel.createStandardWorldModel(model);
-        this.channel = new DCOPChannel(0, this.model, config);
+        this.channel = new DCOPChannel(this.model, config);
     }
 
     @Override

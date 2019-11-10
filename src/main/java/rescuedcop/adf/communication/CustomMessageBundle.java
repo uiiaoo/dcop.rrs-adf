@@ -1,21 +1,22 @@
-package lib.adf.dcop.communication;
+package rescuedcop.adf.communication;
 
-import adf.component.communication.*;
+import adf.component.communication.MessageBundle;
+import adf.component.communication.CommunicationMessage;
 import java.util.*;
 
 public class CustomMessageBundle extends MessageBundle
 {
-    private List<Class<? extends CommunicationMessage>> clazzes
+    private List<Class<? extends CommunicationMessage>> classes
         = new LinkedList<>();
 
     @Override
     public List<Class<? extends CommunicationMessage>> getMessageClassList()
     {
-        return this.clazzes;
+        return new ArrayList<>(this.classes);
     }
 
     public void addClass(Class<? extends CommunicationMessage> clazz)
     {
-        this.clazzes.add(clazz);
+        this.classes.add(clazz);
     }
 }

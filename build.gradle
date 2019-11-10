@@ -1,8 +1,5 @@
 apply plugin: 'java'
 
-sourceCompatibility = '1.11'
-targetCompatibility = '1.11'
-
 repositories
 {
     mavenCentral()
@@ -13,13 +10,4 @@ dependencies
     implementation fileTree(dir: 'library', include: '**/*.jar')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:latest.release'
-}
-
-sourceSets
-{
-    main { java { srcDirs = ['src'] } }
-}
-
-jar
-{
 }
