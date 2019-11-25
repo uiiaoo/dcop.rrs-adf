@@ -1,2 +1,1 @@
-# rrs-adf-dcop
-This document is coming soon with an example.
+Document -> [Wiki](https://github.com/uiiaoo/rrs-adf-dcop/wiki/Introduction)
