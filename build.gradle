@@ -1,5 +1,10 @@
 apply plugin: 'java'
 
+group = 'com.github.roborescue'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
 repositories
 {
     mavenCentral()
@@ -7,7 +12,23 @@ repositories
 
 dependencies
 {
-    implementation fileTree(dir: 'library', include: '**/*.jar')
+    implementation 'com.github.roborescue:rcrs-server:master-SNAPSHOT'
+    implementation 'com.github.roborescue:adf-core-java:master-SNAPSHOT'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:latest.release'
+}
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url = 'https://sourceforge.net/projects/jsi/files/m2_repo'
+    }
+    maven {
+        url = 'https://repo.enonic.com/public/'
+    }
+    maven {
+        url 'https://jitpack.io'
+    }
 }

@@ -1,7 +1,7 @@
 package rescuedcop.adf.communication;
 
-import adf.component.communication.MessageBundle;
-import adf.component.communication.CommunicationMessage;
+import adf.core.component.communication.MessageBundle;
+import adf.core.component.communication.CommunicationMessage;
 import java.util.*;
 
 public class CustomMessageBundle extends MessageBundle
