@@ -1,6 +1,5 @@
 apply plugin: 'java'
 
-group = 'com.github.roborescue'
 
 sourceCompatibility = '17'
 targetCompatibility = '17'
