@@ -22,17 +22,3 @@ dependencies
     testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:latest.release'
 }
-
-repositories {
-    mavenCentral()
-
-    maven {
-        url = 'https://sourceforge.net/projects/jsi/files/m2_repo'
-    }
-    maven {
-        url = 'https://repo.enonic.com/public/'
-    }
-    maven {
-        url 'https://jitpack.io'
-    }
-}
