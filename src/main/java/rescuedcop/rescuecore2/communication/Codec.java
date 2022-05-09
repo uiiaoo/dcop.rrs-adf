@@ -58,7 +58,7 @@ public class Codec
     {
         Message message = EncodingTools.readMessage(stream);
 
-        if (!AK_SPEAK.toString().equals(message.getURN()))
+        if (AK_SPEAK.getURNId() != message.getURN())
             throw new IOException("The read message is not AKSpeak");
 
         return (AKSpeak)message;

@@ -1,10 +1,10 @@
 package rescuedcop.adf.communication;
 
-import adf.agent.info.*;
-import adf.agent.communication.MessageManager;
-import adf.component.communication.CommunicationMessage;
-import adf.component.communication.util.BitStreamReader;
-import adf.component.communication.util.BitOutputStream;
+import adf.core.agent.info.*;
+import adf.core.agent.communication.MessageManager;
+import adf.core.component.communication.CommunicationMessage;
+import adf.core.component.communication.util.BitStreamReader;
+import adf.core.component.communication.util.BitOutputStream;
 import rescuecore2.worldmodel.EntityID;
 import rescuecore2.standard.messages.AKSpeak;
 import java.lang.reflect.Constructor;

@@ -1,6 +1,6 @@
 package rescuedcop.adf.communication;
 
-import adf.agent.info.*;
+import adf.core.agent.info.*;
 import rescuecore2.standard.messages.AKSpeak;
 import rescuecore2.config.Config;
 import rescuecore2.Constants;

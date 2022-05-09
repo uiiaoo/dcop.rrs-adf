@@ -1,13 +1,13 @@
 package rescuedcop.adf.module;
 
-import adf.component.module.complex.HumanDetector;
-import adf.component.communication.CommunicationMessage;
-import adf.agent.communication.MessageManager;
-import adf.agent.communication.standard.bundle.StandardMessageBundle;
-import adf.agent.info.*;
-import adf.agent.module.ModuleManager;
-import adf.agent.develop.DevelopData;
-import adf.agent.precompute.PrecomputeData;
+import adf.core.component.module.complex.HumanDetector;
+import adf.core.component.communication.CommunicationMessage;
+import adf.core.agent.communication.MessageManager;
+import adf.core.agent.communication.standard.bundle.StandardMessageBundle;
+import adf.core.agent.info.*;
+import adf.core.agent.module.ModuleManager;
+import adf.core.agent.develop.DevelopData;
+import adf.core.agent.precompute.PrecomputeData;
 import rescuecore2.standard.messages.AKSpeak;
 import rescuecore2.worldmodel.EntityID;
 import rescuecore2.misc.Pair;
